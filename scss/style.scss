@@ -1,0 +1,18 @@
+@import "mixin";
+
+.app {
+  font-size: 20px;
+  color: blue;
+
+  @include breakpoint('sm') {
+    color: red;
+  }
+
+  @include breakpoint('md') {
+    color: yellow;
+  }
+
+  &__child {
+    color: green;
+  }
+}
